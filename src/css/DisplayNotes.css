@@ -1,0 +1,62 @@
+.displayNotes{
+  position: relative;
+  height: 60vh;
+  width: 60vw;
+  margin: 5vh 0;
+  padding: 2.5vh;
+  background: #e7e7e7;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  left: 50%;
+  transform: translate( -50% , 0 );
+}
+
+@media screen and (max-device-width: 480px){
+  .displayNotes{
+    width: 90vw;
+  }
+}
+
+.filterInput{
+  border-radius: 1000px;
+  padding: 0.5em 1em;
+  border: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  outline: none;
+  margin: 2vh 2.5%;
+  width: 50%;
+}
+
+.noteList{
+  position: relative;
+  height: 45vh;
+  overflow: auto;
+  padding: 0 2.5%;
+}
+
+.note{
+  width: 100%;
+  position: relative;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 1em;
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+}
+
+.note p:nth-child(2){
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px red;
+  height: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+  color: red;
+  cursor: pointer;
+}
+.note p:first-child{
+  flex: 10;
+}
